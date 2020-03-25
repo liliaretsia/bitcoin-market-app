@@ -1,0 +1,25 @@
+.trade-button {
+    background-color: white;
+    color: #007bff;
+    border: 2px solid #007bff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.trade-button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.trade-button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.methodBadge {
+    margin-left: -15px;
+}
