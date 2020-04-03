@@ -8,3 +8,5 @@ RUN cp .env.dist .env && \
     composer install && \
     php artisan key:generate && php artisan config:cache
 EXPOSE 80
+ENTRYPOINT ["top", "-b"]
+CMD ["-c"]
