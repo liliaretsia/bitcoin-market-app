@@ -18,11 +18,6 @@ migrate_db() {
   php artisan db:seed --class=DatabaseSeeder --force
 }
 
-install_fe_dependencies() {
-  npm install
-  npm run dev
-}
-
 start_server() {
   exec php artisan serve --host=0.0.0.0 --port=$1
 }
@@ -33,7 +28,5 @@ create_db
 echo "db was created"
 migrate_db
 echo "migrations were executed"
-install_fe_dependencies
-echo "dependencies were installed"
 start_server 80
 echo "dependencies was started"
