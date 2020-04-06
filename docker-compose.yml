@@ -28,5 +28,4 @@ services:
     build:
       context: ./
       dockerfile: docker/node.docker
-    command: ["./fe.sh"]
     tty: true

@@ -1,3 +1,3 @@
 FROM node:10-alpine
-
-WORKDIR /var/www
+WORKDIR /
+RUN npm install && npm run dev
